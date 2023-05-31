@@ -451,6 +451,13 @@ public final class BluetoothCodecConfig implements Parcelable {
     }
 
     /**
+     * @hide
+     */
+    public @NonNull String getCodecName() {
+        return getCodecName(mCodecType);
+    }
+
+    /**
      * Returns the codec name converted to {@link String}.
      * @hide
      */
